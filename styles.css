@@ -2,15 +2,33 @@
   margin: 0;
   padding: 0;
 }
-.navbar-custom {
-  background-color: rgb(254 254 254);
+body {
+  font-family: "Lora", serif;
+  font-size: 1.6rem;
+  color: #0b1215;
 }
-#mission-container {
+hr{
+  width: 15%;
+  height: 5px;
+  background-color: #b3c89c;
+  border: none;
+  opacity: unset;
+}
+
+.navbar-custom {
+  background-color: rgb(250 250 248);
+
+  color: #0b1215;
+  font-weight: 600;
+  font-size: 1rem;
+}
+#option-container {
   background-color: rgb(250 250 248);
   padding: 3% 0%;
 }
 .title-column {
   margin-left: -10%;
+  
 }
 .logo {
   width: 60%;
@@ -29,47 +47,43 @@
 
 .opcion-mission {
   height: auto;
-  background-image: url("./media/inner-banner.jpg");
-  background-size:cover
-  
- 
+  background-image: url("./media/banner-2.jpg");
+
+  background-size: cover;
+  background-position: right center;
 }
 .opcion-text-column {
-background-color: rgba(0, 0, 0, 0.471);
-color: aliceblue;
-padding-left: 10%;
+  height: 600px;
+  background-color: rgba(0, 0, 0, 0.471);
+  color: aliceblue;
+  padding-left: 10%;
 }
 
-.opcion-logo {
-  width: 40%;
-}
 #opcion-title {
   font-weight: 700;
   line-height: 3.5rem;
-  font-size: 3.5rem;
+  font-size: 4rem;
   width: 50%;
+  margin-top: 200px;
 }
-#divider-container {
-  padding: 5% 30%;
-  background-color: rgb(254 254 254);
-}
-#divider-title {
-  font-size: 2rem;
-  font-weight: 700;
-}
+
 
 #services-container {
   background-color: rgb(250 250 248);
   padding: 5%;
 }
+.card-custom{
+    background-color: rgb(250 250 248);
 
+}
 #about-title {
   font-size: 2rem;
   font-weight: 700;
 }
 #about-container {
   padding-top: 5%;
-  margin-left: 10%;
+  padding-bottom: 5%;
+
 }
 #about-title {
   padding-top: 10%;
@@ -77,13 +91,17 @@ padding-left: 10%;
 .about-text-col {
   padding-left: 10%;
 }
+
 .card {
   border-radius: 0.7rem;
 }
 #testimonials-container {
   background-color: rgb(250 250 248);
 }
-
+.testimonials-title{
+  font-size: 2rem;
+  font-weight: 700;
+}
 
 label {
   color: #333;
@@ -95,14 +113,20 @@ label {
   letter-spacing: 0.2em;
   width: 80%;
   margin-left: 3px;
-  }
+}
+.custom-btn {
+  background-color: #b3c89c;
+  color: #fff;
+}
 .help-block.with-errors {
   color: #ff5050;
   margin-top: 5px;
-
 }
 
-.card-form{
-margin-left: 10px;
-margin-right: 10px;
+.card-form {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#contact-container {
+  padding-bottom: 300px;
 }
