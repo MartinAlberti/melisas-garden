@@ -4,7 +4,7 @@
 }
 body {
   font-family: "Lora", serif;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   color: #0b1215;
 }
 hr{
@@ -88,9 +88,7 @@ hr{
 #about-title {
   padding-top: 10%;
 }
-.about-text-col {
-  padding-left: 10%;
-}
+
 
 .card {
   border-radius: 0.7rem;

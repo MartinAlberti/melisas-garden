@@ -28,6 +28,7 @@
       type="text/javascript"
       src="https://cdn.emailjs.com/dist/email.min.js"
     ></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=AUJFJfj8NHUwjP9fiX4VP3JbCbxQ4btM6I564NRQ6E6bNx8GIIbpfFtI6bBf6ZHzrzbShDsWijiUnKKd&currency=USD"></script>
 
     <title>Melisa’s Garden</title>
   </head>
@@ -169,11 +170,10 @@
         </div>
       </div>
     </div>
-
     <div id="about-container" class="container text-start">
       <div class="row align-items-center">
         <!-- Image column -->
-        <div class="col-lg-6 col-12 text-center">
+        <div class="col-lg-6 col-12 text-center mb-4 mb-lg-0 pe-lg-5">
           <img src="media/about2.png" alt="" class="img-fluid rounded w-100" />
         </div>
         <!-- Text column -->
@@ -182,7 +182,7 @@
             <p>About me</p>
             <hr class="d-md-start d-block mx-md-0 mx-auto" />
           </div>
-          <div id="about-text">
+          <div id="about-text" class="text-md-start text-center">
             <p>
               I was born and raised in Córdoba, Argentina, where I graduated as
               an Agricultural Engineer. I then pursued a Ph.D. at the University
@@ -337,10 +337,13 @@
       <div class="text-center mt-5 p-4">
         <h1>Don’t hesitate to reach out, we’re here to help.</h1>
       </div>
-    
+
       <div class="row">
         <div class="col-lg-7 mx-auto">
-          <div class="card card-form mt-2 mx-auto p-4 bg-light shadow-sm" style="border: none">
+          <div
+            class="card card-form mt-2 mx-auto p-4 bg-light shadow-sm"
+            style="border: none"
+          >
             <div class="card-body bg-light">
               <div class="container">
                 <form id="contact-form" role="form" class="text-center">
@@ -348,50 +351,98 @@
                     <div class="row justify-content-center">
                       <div class="col-md-8">
                         <div class="form-group">
-                          <label for="from_name" class="text-center d-block">First name *</label>
-                          <input id="from_name" type="text" name="from_name" class="form-control w-100 mx-auto" required />
+                          <label for="from_name" class="text-center d-block"
+                            >First name *</label
+                          >
+                          <input
+                            id="from_name"
+                            type="text"
+                            name="from_name"
+                            class="form-control w-100 mx-auto"
+                            required
+                          />
                         </div>
                       </div>
                     </div>
                     <div class="row justify-content-center mt-2">
                       <div class="col-md-8">
                         <div class="form-group">
-                          <label for="from_lastname" class="text-center d-block">Last name (optional)</label>
-                          <input id="from_lastname" type="text" name="from_lastname" class="form-control w-100 mx-auto" />
+                          <label for="from_lastname" class="text-center d-block"
+                            >Last name (optional)</label
+                          >
+                          <input
+                            id="from_lastname"
+                            type="text"
+                            name="from_lastname"
+                            class="form-control w-100 mx-auto"
+                          />
                         </div>
                       </div>
                     </div>
                     <div class="row justify-content-center mt-2">
                       <div class="col-md-8">
                         <div class="form-group">
-                          <label for="from_email" class="text-center d-block">Email *</label>
-                          <input id="from_email" type="email" name="from_email" class="form-control w-100 mx-auto" required />
+                          <label for="from_email" class="text-center d-block"
+                            >Email *</label
+                          >
+                          <input
+                            id="from_email"
+                            type="email"
+                            name="from_email"
+                            class="form-control w-100 mx-auto"
+                            required
+                          />
                         </div>
                       </div>
                     </div>
                     <div class="row justify-content-center mt-2">
                       <div class="col-md-8">
                         <div class="form-group">
-                          <label for="message" class="text-center d-block">Message *</label>
-                          <textarea id="message" name="message" class="form-control w-100 mx-auto" rows="4" required></textarea>
+                          <label for="message" class="text-center d-block"
+                            >Message *</label
+                          >
+                          <textarea
+                            id="message"
+                            name="message"
+                            class="form-control w-100 mx-auto"
+                            rows="4"
+                            required
+                          ></textarea>
                         </div>
                       </div>
                     </div>
                     <div class="row justify-content-center mt-3">
                       <div class="col-md-8">
-                        <input type="submit" class="btn custom-btn w-100 d-block" value="Send Email" id="button" />
+                        <input
+                          type="submit"
+                          class="btn custom-btn w-100 d-block"
+                          value="Send Email"
+                          id="button"
+                        />
                       </div>
                     </div>
                   </div>
                 </form>
-    
+
                 <!-- 🔥 Subscribe Section -->
                 <div class="text-center mt-4">
                   <h3>Subscribe to Our Newsletter</h3>
                   <p>Stay updated with the latest news and offers.</p>
-                  <form id="subscribe-form" class="d-flex flex-column align-items-center">
-                    <input type="email" class="form-control w-75 mb-2" placeholder="Enter your email" name="newsletter" id="newsletter" required />
-                    <button type="submit" class="btn custom-btn w-50">Subscribe</button>
+                  <form
+                    id="subscribe-form"
+                    class="d-flex flex-column align-items-center"
+                  >
+                    <input
+                      type="email"
+                      class="form-control w-75 mb-2"
+                      placeholder="Enter your email"
+                      name="newsletter"
+                      id="newsletter"
+                      required
+                    />
+                    <button type="submit" class="btn custom-btn w-50">
+                      Subscribe
+                    </button>
                   </form>
                 </div>
                 <!-- 🔥 End Subscribe Section -->
@@ -401,7 +452,10 @@
         </div>
       </div>
     </div>
-    
+    <div class="d-flex justify-content-center">
+      <div id="paypal-button-container"></div>
+    </div>
+
     <script type="text/javascript">
       emailjs.init("1I1LzXwiblpOTv4Ye");
     </script>
@@ -462,6 +516,35 @@
             }
           );
         });
+    </script>
+    <script>
+      paypal
+        .Buttons({
+          createOrder: function (data, actions) {
+            return actions.order.create({
+              purchase_units: [
+                {
+                  amount: {
+                    value: "10.00", // Change this to your actual product price
+                  },
+                },
+              ],
+            });
+          },
+          onApprove: function (data, actions) {
+            return actions.order.capture().then(function (details) {
+              alert(
+                "✅ Payment successful! Thank you, " +
+                  details.payer.name.given_name
+              );
+            });
+          },
+          onError: function (err) {
+            console.error("❌ Payment failed:", err);
+            alert("Something went wrong. Please try again.");
+          },
+        })
+        .render("#paypal-button-container");
     </script>
 
     <script
