@@ -3,7 +3,7 @@
   padding: 0;
 }
 body {
-  font-family: "Lora", serif;
+  /* font-family: "Lora", serif; */
   font-size: 1.125rem;
   color: #0b1215;
 }
@@ -26,13 +26,8 @@ hr{
   background-color: rgb(250 250 248);
   padding: 3% 0%;
 }
-.title-column {
-  margin-left: -10%;
-  
-}
-.logo {
-  width: 60%;
-}
+
+
 #title {
   font-weight: 700;
   line-height: 3.5rem;
@@ -56,15 +51,14 @@ hr{
   height: 600px;
   background-color: rgba(0, 0, 0, 0.471);
   color: aliceblue;
-  padding-left: 10%;
+  padding-left: 5%;
 }
 
 #opcion-title {
   font-weight: 700;
   line-height: 3.5rem;
   font-size: 4rem;
-  width: 50%;
-  margin-top: 200px;
+  width: 80%;
 }
 
 
@@ -131,4 +125,58 @@ label {
 }
 #contact-container {
   padding-bottom: 5%;
+}
+/* Make the carousel narrower */
+/* #testimonialCarousel {
+  max-width: 70%;
+  margin: 0 auto;
+} */
+
+/* Position arrows outside the text */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Change the color of the arrows */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #b3c89c; /* Change this to any color you want */
+  border-radius: 50%;
+  padding: 10px;
+}
+
+/* Style the indicators */
+.carousel-indicators button {
+  background-color: #b3c89c !important; /* Change to any color */
+  width: 10px;
+  height: 10px;
+}
+/* Adjusting the size of indicators for mobile */
+@media (max-width: 767px) {
+  .carousel-indicators button {
+    width: 10px; /* Smaller indicator on mobile */
+    height: 10px;
+  }
+
+  .carousel-indicators {
+    bottom: 20px; /* Move the indicators up slightly on mobile */
+  }
+}
+
+/* Style the indicators to make them darker */
+.carousel-indicators button {
+  background-color: #b3c89c !important; /* Darker color for the indicators */
+  width: 12px;
+  height: 12px;
+}
+
+/* Style for active indicator */
+.carousel-indicators .active {
+  background-color: #90ab72 !important; /* Even darker color for the active indicator */
+}
+footer{
+  background-color:  rgb(250 250 248);
 }

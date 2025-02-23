@@ -33,16 +33,10 @@
     <title>Melisa’s Garden</title>
   </head>
   <body>
-    <nav
-      class="navbar navbar-custom navbar-expand-lg bg-body-tertiary sticky-top"
-    >
+    <nav class="navbar navbar-custom navbar-expand-lg bg-body-tertiary sticky-top shadow-sm">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img
-            src="media/Melisa’s Garden crop.png"
-            style="height: 40px"
-            alt=""
-          />
+        <a class="navbar-brand ms-5" href="#">
+          <img src="media\android-chrome-512x512.png"   style="width: 20%;" alt="" />
         </a>
         <button
           class="navbar-toggler"
@@ -55,59 +49,39 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <!-- Added ms-auto to push the menu to the right -->
-          <ul
-            class="navbar-nav mb-2 mb-lg-0"
-            style="margin-top: 5px; margin-left: 100px"
-          >
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="#services-container"
-                >OUR SERVICES</a
-              >
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item mx-3">
+              <a class="nav-link active" aria-current="page" href="#services-container">OUR SERVICES</a>
             </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="#about-container"
-                >ABOUT</a
-              >
+            <li class="nav-item mx-3">
+              <a class="nav-link active" aria-current="page" href="#about-container">ABOUT</a>
             </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="#contact-container"
-                >CONTACT US</a
-              >
+            <li class="nav-item mx-3">
+              <a class="nav-link active" aria-current="page" href="#contact-container">CONTACT US</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+    
     <div class="container-fluid option-container">
       <div class="row opcion-mission align-items-center">
         <!-- Text Column -->
-        <div class="col-lg-5 col-md-6 col-12 text-start opcion-text-column">
+        <div class="col-lg-5 col-md-6 col-12 text-start opcion-text-column d-flex align-items-center justify-content-center">
           <p id="opcion-title">We bring nature into your everyday life.</p>
         </div>
-
+    
         <!-- Empty Column (Can be used for images or left blank) -->
         <div class="col-lg-7 col-md-6 col-12"></div>
       </div>
     </div>
+    
 
     <div id="services-container" class="container-fluid">
       <div class="row g-4 justify-content-center">
         <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
-          <div
-            class="card card-custom shadow border-0 p-3"
-            style="width: fit-content"
-          >
+          <div class="card card-custom border-0 p-3" style="width: fit-content">
             <img
               src="media/indoor2cropped.jpg"
               class="card-img-top rounded"
@@ -126,10 +100,7 @@
         </div>
 
         <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
-          <div
-            class="card card-custom shadow border-0 p-3"
-            style="width: fit-content"
-          >
+          <div class="card card-custom border-0 p-3" style="width: fit-content">
             <img
               src="media/Melisas garden photo 8cropped.jpeg"
               class="card-img-top rounded"
@@ -148,10 +119,7 @@
         </div>
 
         <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
-          <div
-            class="card card-custom shadow border-0 p-3"
-            style="width: fit-content"
-          >
+          <div class="card card-custom border-0 p-3" style="width: fit-content">
             <img
               src="media/Melisas garden photo 4cropped.jpeg"
               class="card-img-top rounded"
@@ -196,9 +164,8 @@
         </div>
       </div>
     </div>
-    
 
-    <section id="testimonials-container">
+    <!-- <section id="testimonials-container">
       <div class="container py-5">
         <div class="row d-flex justify-content-center">
           <div class="col-md-10 col-xl-8 text-center">
@@ -208,7 +175,7 @@
             </div>
 
             <p class="mb-4 pb-2 mb-md-5 pb-md-0">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+              What our clients are saying.
             </p>
           </div>
         </div>
@@ -217,16 +184,7 @@
           <div class="col-md-4 mb-4 mb-md-0">
             <div class="card shadow-sm" style="border: none">
               <div class="card-body py-4 mt-2">
-                <div class="d-flex justify-content-center mb-4">
-                  <img
-                    src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp"
-                    class="rounded-circle shadow-1-strong"
-                    width="100"
-                    height="100"
-                  />
-                </div>
-                <h5 class="font-weight-bold">Teresa May</h5>
-                <h6 class="font-weight-bold my-3">Founder at ET Company</h6>
+                <h5 class="font-weight-bold">Laura D.</h5>
                 <ul class="list-unstyled d-flex justify-content-center">
                   <li>
                     <i class="fa-solid fa-star" style="color: #b3c89c"></i>
@@ -245,9 +203,13 @@
                   </li>
                 </ul>
                 <p class="mb-2">
-                  <i class="fas fa-quote-left pe-2"></i>Lorem ipsum dolor sit
-                  amet, consectetur adipisicing elit. Quod eos id officiis hic
-                  tenetur quae quaerat ad velit ab hic tenetur.
+                  Melisa is incredible! She turned my backyard into a beautiful
+                  green space with an organic raised bed, all using natural
+                  gardening methods. Her knowledge really shows, but what stands
+                  out the most is her passion for what she does. Now I get to
+                  enjoy fresh, homegrown produce right from my garden—thanks to
+                  her! If you're looking for someone who truly cares about
+                  nature and sustainability, Melisa is the one to call!
                 </p>
               </div>
             </div>
@@ -255,16 +217,7 @@
           <div class="col-md-4 mb-4 mb-md-0">
             <div class="card shadow-sm" style="border: none">
               <div class="card-body py-4 mt-2">
-                <div class="d-flex justify-content-center mb-4">
-                  <img
-                    src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(15).webp"
-                    class="rounded-circle shadow-1-strong"
-                    width="100"
-                    height="100"
-                  />
-                </div>
-                <h5 class="font-weight-bold">Maggie McLoan</h5>
-                <h6 class="font-weight-bold my-3">Photographer at Studio LA</h6>
+                <h5 class="font-weight-bold">Melina M.</h5>
                 <ul class="list-unstyled d-flex justify-content-center">
                   <li>
                     <i class="fa-solid fa-star" style="color: #b3c89c"></i>
@@ -283,26 +236,26 @@
                   </li>
                 </ul>
                 <p class="mb-2">
-                  <i class="fas fa-quote-left pe-2"></i>Autem, totam debitis
-                  suscipit saepe sapiente magnam officiis quaerat necessitatibus
-                  odio assumenda labore laboriosam.
+                  I recently used the Melisa’s Garden service for my backyard
+                  and it was an amazing experience from start to finish. Melisa
+                  was incredibly professional, friendly, and attentive to my
+                  needs. She took the time to understand my vision for the space
+                  and she also provided fantastic suggestions. The quality of
+                  work was exceptional – my backyard looks beautiful, and
+                  everything was completed with such attention to detail. She
+                  has a lot of knowledge about seasonal plants and how to take
+                  care each of them. What really impressed me was the dedication
+                  and passion she has for her work and for making her clients
+                  happy. She also took great care in cleaning up afterward,
+                  leaving the space looking even better than before.
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-0">
+          <div class="col-md-4 mb-4 mb-md-0">
             <div class="card shadow-sm" style="border: none">
               <div class="card-body py-4 mt-2">
-                <div class="d-flex justify-content-center mb-4">
-                  <img
-                    src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(17).webp"
-                    class="rounded-circle shadow-1-strong"
-                    width="100"
-                    height="100"
-                  />
-                </div>
-                <h5 class="font-weight-bold">Alexa Horwitz</h5>
-                <h6 class="font-weight-bold my-3">Front-end Developer in NY</h6>
+                <h5 class="font-weight-bold">Camila L.</h5>
                 <ul class="list-unstyled d-flex justify-content-center">
                   <li>
                     <i class="fa-solid fa-star" style="color: #b3c89c"></i>
@@ -321,21 +274,330 @@
                   </li>
                 </ul>
                 <p class="mb-2">
-                  <i class="fas fa-quote-left pe-2"></i>Cras sit amet nibh
-                  libero, in gravida nulla metus scelerisque ante sollicitudin
-                  commodo cras purus odio, vestibulum in tempus viverra turpis.
+                  Absolutely bursting with joy over my balcony transformation
+                  thanks to the incredible Melisa! Seriously, what was once a
+                  sad, sun-baked concrete slab is now a lush, vibrant oasis. I
+                  used to just glance at it and sigh, but now I can't wait to
+                  step out and enjoy my little slice of green paradise. Melisa
+                  didn't just plant a few things; she crafted an experience. She
+                  listened to my (admittedly vague) desires for "something green
+                  and happy" and turned them into a reality beyond my wildest
+                  dreams. She has this magical ability to understand what plants
+                  will thrive in even the most challenging spaces, and she chose
+                  a delightful mix of textures and colors that just dance
+                  together. The way she incorporated succulents so I have a low
+                  lift work is amazing! And the two big pots with bigger plants
+                  not only look adorable but create a full green frame to my
+                  view. Honestly, Melisa's work is more than just gardening;
+                  it's artistry. She's got a true green thumb and a heart of
+                  gold. If you're looking to breathe life into your outdoor
+                  space, whether it's a sprawling garden or a tiny balcony,
+                  Melisa is your person. She's transformed my balcony from a
+                  dry, boring place into a fun, green, good-looking balcony full
+                  of life and green! I can't recommend her highly enough. My
+                  balcony is now my happy place, and I have Melisa to thank for
+                  that.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 mb-md-0">
+            <div class="card shadow-sm" style="border: none">
+              <div class="card-body py-4 mt-2">
+                <h5 class="font-weight-bold">Marcela P.</h5>
+                <ul class="list-unstyled d-flex justify-content-center">
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #b3c89c"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #b3c89c"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #b3c89c"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #b3c89c"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star" style="color: #b3c89c"></i>
+                  </li>
+                </ul>
+                <p class="mb-2">
+                  I want to thank Melisa for her incredible help in designing
+                  the entrance of my home. She provided me with creative and
+                  practical ideas that truly transformed the space, giving it a
+                  more harmonious and attractive look. Her knowledge of
+                  landscaping and attention to detail made the process easy and
+                  satisfying. Thanks to her guidance, I now have a more
+                  welcoming and well-designed entrance. I highly recommend her
+                  work to anyone looking to enhance their outdoor spaces with a
+                  professional and original touch. Thank you, Melisa!
                 </p>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </section> -->
+
+    <section id="testimonials-container">
+      <div class="container py-5">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-10 col-xl-8 text-center">
+            <div class="text-center d-flex flex-column align-items-center">
+              <p class="mb-2 testimonials-title">Testimonials</p>
+              <hr />
+            </div>
+            <p class="mb-4 pb-2 mb-md-5 pb-md-0">
+              What our clients are saying.
+            </p>
+          </div>
+        </div>
+
+        <div id="testimonialCarousel" class="carousel slide">
+          <div class="carousel-inner">
+            <!-- Testimonial Item 1 -->
+            <div class="carousel-item active">
+              <div
+                class="card shadow-sm text-center mx-auto"
+                style="border: none"
+              >
+                <div class="card-body py-4">
+                  <h5 class="font-weight-bold">Laura D.</h5>
+                  <ul class="list-unstyled d-flex justify-content-center">
+                    <li>
+                      <i class="fa-solid fa-star" style="color: #b3c89c"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star" style="color: #b3c89c"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star" style="color: #b3c89c"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star" style="color: #b3c89c"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star" style="color: #b3c89c"></i>
+                    </li>
+                  </ul>
+                  <p class="mb-2 p-5">
+                    Melisa is incredible! She turned my backyard into a
+                    beautiful green space with an organic raised bed, all using
+                    natural gardening methods. Her knowledge really shows, but
+                    what stands out the most is her passion for what she does.
+                    Now I get to enjoy fresh, homegrown produce right from my
+                    garden—thanks to her! If you're looking for someone who
+                    truly cares about nature and sustainability, Melisa is the
+                    one to call!
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial Item 2 -->
+            <div class="carousel-item">
+              <div
+                class="card shadow-sm text-center mx-auto"
+                style="border: none"
+              >
+                <div class="card-body py-4">
+                  <h5 class="font-weight-bold">Melina M.</h5>
+                  <ul class="list-unstyled d-flex justify-content-center">
+                    <li>
+                      <i class="fa-solid fa-star" style="color: #b3c89c"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star" style="color: #b3c89c"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star" style="color: #b3c89c"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star" style="color: #b3c89c"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star" style="color: #b3c89c"></i>
+                    </li>
+                  </ul>
+                  <p class="mb-2 p-5">
+                    I recently used the Melisa’s Garden service for my backyard
+                    and it was an amazing experience from start to finish.
+                    Melisa was incredibly professional, friendly, and attentive
+                    to my needs. She took the time to understand my vision for
+                    the space and she also provided fantastic suggestions. The
+                    quality of work was exceptional – my backyard looks
+                    beautiful, and everything was completed with such attention
+                    to detail. She has a lot of knowledge about seasonal plants
+                    and how to take care each of them. What really impressed me
+                    was the dedication and passion she has for her work and for
+                    making her clients happy. She also took great care in
+                    cleaning up afterward, leaving the space looking even better
+                    than before. I couldn’t be happier with the results, and I
+                    highly recommend Melisa Garden ! She truly exceeded my
+                    expectations!
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial Item 3 -->
+            <div class="carousel-item">
+              <div
+                class="card shadow-sm text-center mx-auto"
+                style="border: none"
+              >
+                <div class="card-body py-4">
+                  <h5 class="font-weight-bold">Camila L.</h5>
+                  <ul class="list-unstyled d-flex justify-content-center">
+                    <li>
+                      <i class="fa-solid fa-star" style="color: #b3c89c"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star" style="color: #b3c89c"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star" style="color: #b3c89c"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star" style="color: #b3c89c"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star" style="color: #b3c89c"></i>
+                    </li>
+                  </ul>
+                  <p class="mb-2 p-5">
+                    Absolutely bursting with joy over my balcony transformation
+                    thanks to the incredible Melisa! Seriously, what was once a
+                    sad, sun-baked concrete slab is now a lush, vibrant oasis. I
+                    used to just glance at it and sigh, but now I can't wait to
+                    step out and enjoy my little slice of green paradise. Melisa
+                    didn't just plant a few things; she crafted an experience.
+                    She listened to my (admittedly vague) desires for "something
+                    green and happy" and turned them into a reality beyond my
+                    wildest dreams. She has this magical ability to understand
+                    what plants will thrive in even the most challenging spaces,
+                    and she chose a delightful mix of textures and colors that
+                    just dance together. The way she incorporated succulents so
+                    I have a low lift work is amazing! And the two big pots with
+                    bigger plants not only look adorable but create a full green
+                    frame to my view. Honestly, Melisa's work is more than just
+                    gardening; it's artistry. She's got a true green thumb and a
+                    heart of gold. If you're looking to breathe life into your
+                    outdoor space, whether it's a sprawling garden or a tiny
+                    balcony, Melisa is your person. She's transformed my balcony
+                    from a dry, boring place into a fun, green, good-looking
+                    balcony full of life and green! I can't recommend her highly
+                    enough. My balcony is now my happy place, and I have Melisa
+                    to thank for that.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial Item 4 -->
+            <div class="carousel-item">
+              <div
+                class="card shadow-sm text-center mx-auto"
+                style="border: none"
+              >
+                <div class="card-body py-4">
+                  <h5 class="font-weight-bold">Marcela P.</h5>
+                  <ul class="list-unstyled d-flex justify-content-center">
+                    <li>
+                      <i class="fa-solid fa-star" style="color: #b3c89c"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star" style="color: #b3c89c"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star" style="color: #b3c89c"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star" style="color: #b3c89c"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star" style="color: #b3c89c"></i>
+                    </li>
+                  </ul>
+                  <p class="mb-2 p-5">
+                    I want to thank Melisa for her incredible help in designing
+                    the entrance of my home. She provided me with creative and
+                    practical ideas that truly transformed the space, giving it
+                    a more harmonious and attractive look. Her knowledge of
+                    landscaping and attention to detail made the process easy
+                    and satisfying. Thanks to her guidance, I now have a more
+                    welcoming and well-designed entrance. I highly recommend her
+                    work to anyone looking to enhance their outdoor spaces with
+                    a professional and original touch. Thank you, Melisa!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#testimonialCarousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#testimonialCarousel"
+                data-bs-slide-to="1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#testimonialCarousel"
+                data-bs-slide-to="2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#testimonialCarousel"
+                data-bs-slide-to="3"
+              ></button>
+            </div>
+          </div>
+
+          <!-- Carousel Controls -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
     </section>
+
+    <!-- Bootstrap 5 Carousel JavaScript -->
+    <script>
+      var myCarousel = new bootstrap.Carousel(
+        document.querySelector("#testimonialCarousel"),
+        {
+          interval: false, // Stop auto-sliding to let users read full text
+          pause: "hover",
+          ride: false,
+        }
+      );
+    </script>
 
     <div id="contact-container" class="container">
       <div class="text-center mt-5 p-4">
         <h1>Don’t hesitate to reach out, we’re here to help.</h1>
-        
       </div>
 
       <div class="row">
@@ -351,7 +613,10 @@
                     <div class="row justify-content-center">
                       <div class="col-md-8">
                         <div class="form-group">
-                          <label for="from_name" class="text-center text-sm-start d-block fs-6">
+                          <label
+                            for="from_name"
+                            class="text-center text-sm-start d-block fs-6"
+                          >
                             First name *
                           </label>
                           <input
@@ -365,11 +630,14 @@
                         </div>
                       </div>
                     </div>
-                
+
                     <div class="row justify-content-center mt-2">
                       <div class="col-md-8">
                         <div class="form-group">
-                          <label for="from_lastname" class="text-center text-sm-start d-block fs-6">
+                          <label
+                            for="from_lastname"
+                            class="text-center text-sm-start d-block fs-6"
+                          >
                             Last name (optional)
                           </label>
                           <input
@@ -382,11 +650,14 @@
                         </div>
                       </div>
                     </div>
-                
+
                     <div class="row justify-content-center mt-2">
                       <div class="col-md-8">
                         <div class="form-group">
-                          <label for="from_email" class="text-center text-sm-start d-block fs-6">
+                          <label
+                            for="from_email"
+                            class="text-center text-sm-start d-block fs-6"
+                          >
                             Email *
                           </label>
                           <input
@@ -400,11 +671,14 @@
                         </div>
                       </div>
                     </div>
-                
+
                     <div class="row justify-content-center mt-2">
                       <div class="col-md-8">
                         <div class="form-group">
-                          <label for="message" class="text-center text-sm-start d-block fs-6">
+                          <label
+                            for="message"
+                            class="text-center text-sm-start d-block fs-6"
+                          >
                             Message *
                           </label>
                           <textarea
@@ -418,12 +692,12 @@
                         </div>
                       </div>
                     </div>
-                
+
                     <div class="row justify-content-center mt-3">
-                      <div class="col-md-8">
+                      <div >
                         <input
                           type="submit"
-                          class="btn custom-btn w-75"
+                          class="btn custom-btn w-25"
                           value="Send Email"
                           id="button"
                         />
@@ -431,26 +705,27 @@
                     </div>
                   </div>
                 </form>
-                
-                
 
                 <!-- 🔥 Subscribe Section -->
                 <div class="text-center mt-5">
                   <h3>Stay Connected with Melisa’s Garden</h3>
-                  <p>Join our community and be the first to know about workshops and exclusive deals.</p>
+                  <p>
+                    Join our community and be the first to know about workshops
+                    and exclusive deals.
+                  </p>
                   <form
                     id="subscribe-form"
-                    class="d-flex flex-column align-items-center "
+                    class="d-flex flex-column align-items-center"
                   >
                     <input
                       type="email"
-                      class="form-control w-75 mb-2"
+                      class="form-control w-75 "
                       placeholder="Enter your email"
                       name="newsletter"
                       id="newsletter"
                       required
                     />
-                    <button type="submit" class="btn custom-btn w-50">
+                    <button type="submit" class="btn custom-btn w-25 mt-3">
                       Subscribe
                     </button>
                   </form>
@@ -462,108 +737,37 @@
         </div>
       </div>
     </div>
-    <div class="d-flex justify-content-center" >
-      <div id="qr"><img src="./media/Guia-qr.png" style="width: 15rem;" alt=""></div>
-    </div>
-    <div class="d-flex justify-content-center" >
-      <div id="paypal-button-container"></div>
-    </div>
-
-    <script type="text/javascript">
-      emailjs.init("1I1LzXwiblpOTv4Ye");
-    </script>
-    <script>
-      // ✅ Contact Form Submission
-      document
-        .getElementById("contact-form")
-        .addEventListener("submit", function (event) {
-          event.preventDefault();
-          let btn = document.getElementById("button");
-          btn.value = "Sending...";
-
-          const serviceID = "service_utu6exs";
-          const templateID = "template_9cizm4m";
-
-          emailjs.sendForm(serviceID, templateID, this).then(
-            () => {
-              btn.value = "Send Email";
-              alert("Your message has been sent successfully!");
-            },
-            (err) => {
-              btn.value = "Send Email";
-              alert("Error sending message: " + JSON.stringify(err));
-            }
-          );
-        });
-
-      // ✅ Newsletter Subscription Form Submission (Fixed)
-      document
-        .getElementById("subscribe-form")
-        .addEventListener("submit", function (event) {
-          event.preventDefault();
-
-          let subscribeBtn = document.querySelector("#subscribe-form button");
-          subscribeBtn.innerText = "Subscribing...";
-          subscribeBtn.disabled = true;
-
-          const serviceID = "service_utu6exs";
-          const templateID = "template_j182v9q";
-
-          const userEmail = document.getElementById("newsletter").value;
-
-          const templateParams = {
-            newsletter: userEmail, // Match this with your EmailJS template variable
-          };
-
-          emailjs.send(serviceID, templateID, templateParams).then(
-            () => {
-              alert("You've successfully subscribed to our newsletter!");
-              subscribeBtn.innerText = "Subscribe";
-              subscribeBtn.disabled = false;
-              document.getElementById("subscribe-form").reset(); // Clear the input field
-            },
-            (err) => {
-              alert("Subscription failed: " + JSON.stringify(err));
-              subscribeBtn.innerText = "Subscribe";
-              subscribeBtn.disabled = false;
-            }
-          );
-        });
-    </script>
-    <script>
-      paypal
-        .Buttons({
-          createOrder: function (data, actions) {
-            return actions.order.create({
-              purchase_units: [
-                {
-                  amount: {
-                    value: "10.00", // Change this to your actual product price
-                  },
-                },
-              ],
-            });
-          },
-          onApprove: function (data, actions) {
-            return actions.order.capture().then(function (details) {
-              alert(
-                "✅ Payment successful! Thank you, " +
-                  details.payer.name.given_name
-              );
-            });
-          },
-          onError: function (err) {
-            console.error("❌ Payment failed:", err);
-            alert("Something went wrong. Please try again.");
-          },
-        })
-        .render("#paypal-button-container");
-    </script>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+    <footer class="text-dark text-center py-4">
+      <div class="social-icons mt-3 mb-4">
+        <a href="https://www.facebook.com/profile.php?id=61565968214254" target="_blank" class="text-dark mx-2"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a href="https://www.instagram.com/melisasgarden/" target="_blank" class="text-dark mx-2"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        
+      </div>
+      <div class="container">
+        <p class="mb-0">
+          
+           Sunnyvale, CA
+        </p>
+        <p class="mb-0">
+           
+           (650) 933-6272
+        </p>
+      </div>
+    </footer>
   </body>
+  <script src="./main.js"></script>
+  <script type="text/javascript">
+    emailjs.init("1I1LzXwiblpOTv4Ye");
+  </script>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </html>
