@@ -170,11 +170,17 @@ label {
   .carousel-indicators {
     bottom: 20px; /* Move the indicators up slightly on mobile */
   }
+  .carousel-control-prev-icon{
+height: 6px;
+  }
+  .carousel-control-next-icon{
+    height: 6px;
+  }
 }
 
 /* Style the indicators to make them darker */
 .carousel-indicators button {
-  background-color: #b3c89c !important; /* Darker color for the indicators */
+  background-color: #b3c89c !important; 
   width: 12px;
   height: 12px;
 }
@@ -185,10 +191,17 @@ label {
 }
 footer{
   background-color:  rgb(250 250 248);
+  margin-top:5%
 }
   /* Reduce the logo size on small screens */
   @media (max-width: 768px) {
     .navbar-brand img {
       width: 50px !important; /* Adjust this value as needed */
     }
+      #opcion-title {
+   
+    line-height: 4rem;
+    font-size: 4rem;
+    
+  }
   }
