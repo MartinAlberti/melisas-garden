@@ -1,3 +1,12 @@
+var myCarousel = new bootstrap.Carousel(
+  document.querySelector("#testimonialCarousel"),
+  {
+    interval: false, // Stop auto-sliding to let users read full text
+    pause: "hover",
+    ride: false,
+  }
+);
+
 // ✅ Contact Form Submission
 document
   .getElementById("contact-form")

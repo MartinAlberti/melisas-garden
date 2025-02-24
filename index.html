@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
       rel="stylesheet"
     />
     <link
@@ -34,18 +34,22 @@
   </head>
   <body>
     <nav
-      class="navbar navbar-custom navbar-expand-lg bg-body-tertiary sticky-top shadow-sm"
+      class="navbar navbar-custom navbar-expand-lg bg-body-tertiary sticky-top s"
     >
-      <div class="container-fluid">
+      <div
+        class="container-fluid d-flex justify-content-between align-items-center"
+      >
         <a class="navbar-brand ms-5" href="#">
           <img
-            src="media\android-chrome-512x512.png"
-            style="width: 20%"
-            alt=""
+            src="media/android-chrome-512x512.png"
+            class="img-fluid",
+            alt="Logo"
           />
         </a>
+
+        <!-- Keep the hamburger menu on the right -->
         <button
-          class="navbar-toggler"
+          class="navbar-toggler ms-auto"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -55,6 +59,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div
           class="collapse navbar-collapse justify-content-end"
           id="navbarSupportedContent"
@@ -123,7 +128,7 @@
             </div>
           </div>
         </div>
-    
+
         <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
           <div class="card card-custom border-0 p-3" style="width: fit-content">
             <img
@@ -142,7 +147,7 @@
             </div>
           </div>
         </div>
-    
+
         <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
           <div class="card card-custom border-0 p-3" style="width: fit-content">
             <img
@@ -163,12 +168,20 @@
         </div>
       </div>
     </div>
-    
-    <div id="about-container" class="container-fluid px-lg-5 text-start mt-5 mb-5">
+
+    <div
+      id="about-container"
+      class="container-fluid px-lg-5 text-start mt-5 mb-5"
+    >
       <div class="row align-items-center">
         <!-- Image column -->
         <div class="col-lg-6 col-12 text-center mb-4 mb-lg-0 pe-lg-5">
-          <img src="media/about2.png" alt="" class="img-fluid rounded w-75" />
+          <img
+            src="media/about2.png"
+            alt=""
+            class="img-fluid rounded w-75"
+            style="max-width: 1000px"
+          />
         </div>
         <!-- Text column -->
         <div class="col-lg-6 col-12 about-text-col">
@@ -190,13 +203,13 @@
               <a
                 href="https://www.facebook.com/profile.php?id=61565968214254"
                 target="_blank"
-                class="text-dark mx-2"
+                class="text-info mx-2"
                 ><i class="fab fa-facebook-f"></i
               ></a>
               <a
                 href="https://www.instagram.com/melisasgarden/"
                 target="_blank"
-                class="text-dark mx-2"
+                class="text-danger mx-2"
                 ><i class="fab fa-instagram"></i
               ></a>
             </div>
@@ -204,7 +217,6 @@
         </div>
       </div>
     </div>
-    
 
     <!-- <section id="testimonials-container">
       <div class="container py-5">
@@ -624,18 +636,6 @@
       </div>
     </section>
 
-    <!-- Bootstrap 5 Carousel JavaScript -->
-    <script>
-      var myCarousel = new bootstrap.Carousel(
-        document.querySelector("#testimonialCarousel"),
-        {
-          interval: false, // Stop auto-sliding to let users read full text
-          pause: "hover",
-          ride: false,
-        }
-      );
-    </script>
-
     <div id="contact-container" class="container">
       <div class="text-center mt-5 p-4">
         <h1>Don’t hesitate to reach out, we’re here to help.</h1>
@@ -738,7 +738,7 @@
                       <div>
                         <input
                           type="submit"
-                          class="btn custom-btn "
+                          class="btn custom-btn"
                           value="Send Email"
                           id="button"
                         />
@@ -766,7 +766,7 @@
                       id="newsletter"
                       required
                     />
-                    <button type="submit" class="btn custom-btn  mt-3">
+                    <button type="submit" class="btn custom-btn mt-3">
                       Subscribe
                     </button>
                   </form>
@@ -783,13 +783,13 @@
         <a
           href="https://www.facebook.com/profile.php?id=61565968214254"
           target="_blank"
-          class="text-dark mx-2"
+          class="text-info mx-2"
           ><i class="fab fa-facebook-f"></i
         ></a>
         <a
           href="https://www.instagram.com/melisasgarden/"
           target="_blank"
-          class="text-dark mx-2"
+          class="text-danger mx-2"
           ><i class="fab fa-instagram"></i
         ></a>
       </div>
