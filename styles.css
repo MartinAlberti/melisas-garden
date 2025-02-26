@@ -171,6 +171,14 @@ label {
   width: 10px;
   height: 10px;
 }
+.workshop-container{
+  margin-top: 5%;
+  height: 100vh;
+}
+.workshop-info{
+  background-color:rgb(250 250 248) ;
+}
+
 /* Adjusting the size of indicators for mobile */
 @media (max-width: 767px) {
   .carousel-indicators button {

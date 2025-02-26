@@ -100,75 +100,81 @@
         </div>
       </div>
     </nav>
-    <div class="container">
-        <div class="row">
-          <!-- Left column with image -->
-          <div class="col-md-6 d-flex justify-content-center">
+    <div class="container workshop-container">
+      <div class="row">
+        <!-- Left column with image -->
+        <div class="col-md-6 ms-md-n3 d-flex justify-content-center">
             <img
               src="./media/workshopFlyer.jpeg"
               alt="Workshop Flyer"
               class="img-fluid w-75 w-md-50 w-lg-25"
             />
           </div>
-      
-          <!-- Right column with QR Code and Form -->
-          <div class="col-md-6">
-            <div class="text-center mt-5">
-              <!-- QR Code Section -->
-              <div class="mb-4">
-                <h3>Venmo</h3>
-                <img
-                  src="media/Guia-qr.png"
-                  alt="QR Code"
-                  class="img-fluid"
-                  style="max-width: 150px"
-                />
-                <p>
-                  <a
-                    href="https://venmo.com/code?user_id=3665938566087834987&created=1740419095"
-                    target="_blank"
-                    >Venmo me</a
-                  >
-                </p>
-              </div>
-      
-              <!-- Form Section -->
-              <h3>Titulo</h3>
-              <p>Texto descriptivo?</p>
-              <form id="workshop-form" class="d-flex flex-column align-items-center">
-                <div class="mb-3 w-75">
-                  <label for="workshop-name" class="form-label">Full Name</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="workshop-name"
-                    name="workshop-name"
-                    placeholder="Enter your full name"
-                    required
-                  />
-                </div>
-              
-                <div class="mb-3 w-75">
-                  <label for="workshop-email" class="form-label">Email</label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="workshop-email"
-                    name="workshop-email"
-                    placeholder="Enter your email"
-                    required
-                  />
-                </div>
-              
-                <button type="submit" class="btn custom-btn mt-3" id="workshop-btn">
-                  Register
-                </button>
-              </form>
+
+        <!-- Right column with QR Code and Form -->
+        <div class="col-md-6 workshop-info rounded pb-5">
+          <div class="text-center mt-5">
+            <!-- QR Code Section -->
+            <div class="mb-4">
+              <h3>Venmo</h3>
+              <img
+                src="media/Guia-qr.png"
+                alt="QR Code"
+                class="img-fluid"
+                style="max-width: 150px"
+              />
+              <p>
+                <a
+                  href="https://venmo.com/code?user_id=3665938566087834987&created=1740419095"
+                  target="_blank"
+                  >Venmo me</a
+                >
+              </p>
             </div>
+
+            <!-- Form Section -->
+            <h3>Titulo</h3>
+            <p>Texto descriptivo?</p>
+            <form
+              id="workshop-form"
+              class="d-flex flex-column align-items-center"
+            >
+              <div class="mb-3 w-75">
+                <label for="workshop-name" class="form-label">Full Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="workshop-name"
+                  name="workshop-name"
+                  placeholder="Enter your full name"
+                  required
+                />
+              </div>
+
+              <div class="mb-3 w-75">
+                <label for="workshop-email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="workshop-email"
+                  name="workshop-email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+
+              <button
+                type="submit"
+                class="btn custom-btn mt-3"
+                id="workshop-btn"
+              >
+                Register
+              </button>
+            </form>
           </div>
         </div>
       </div>
-      
+    </div>
 
     <footer class="text-dark text-center py-4">
       <div class="social-icons mt-3 mb-4">
@@ -190,27 +196,28 @@
         <p class="mb-0">(650) 933-6272</p>
       </div>
     </footer>
-    <script >document.addEventListener('DOMContentLoaded', function () {
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
         document
           .getElementById("workshop-form")
           .addEventListener("submit", function (event) {
             event.preventDefault();
-      
+
             let btn = document.getElementById("workshop-btn");
             btn.innerText = "Registering...";
             btn.disabled = true;
-      
+
             const serviceID = "service_utu6exs";
             const templateID = "template_9cizm4m"; // Adjust this if needed
-      
+
             const templateParams = {
               from_name: document.getElementById("workshop-name").value,
               from_email: document.getElementById("workshop-email").value,
               message: "Interested in attending the workshop.",
             };
             if (window.history.replaceState) {
-    window.history.replaceState(null, null, window.location.pathname);
-  }
+              window.history.replaceState(null, null, window.location.pathname);
+            }
             emailjs.send(serviceID, templateID, templateParams).then(
               () => {
                 btn.innerText = "Registered!";
@@ -221,7 +228,7 @@
                 });
                 document.getElementById("workshop-form").reset();
               },
-              
+
               (err) => {
                 alert("Error registering: " + JSON.stringify(err));
                 btn.innerText = "Register";
@@ -230,8 +237,7 @@
             );
           });
       });
-      </script>
-
+    </script>
   </body>
 
   <script type="text/javascript">
