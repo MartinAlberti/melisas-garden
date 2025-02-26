@@ -20,13 +20,14 @@ hr{
 
   color: #0b1215;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 .navbar-brand img {
-  width: 20%; /* Adjust this size as needed */
+  width: 15%; /* Adjust this size as needed */
 }
 a:hover{
-transform: scale(1.01);
+    font-weight: 650;
+
 }
 #option-container {
   background-color: rgb(250 250 248);
@@ -52,6 +53,7 @@ transform: scale(1.01);
 
   background-size: cover;
   background-position: right center;
+  
 }
 .opcion-text-column {
   height: 600px;
@@ -71,6 +73,7 @@ transform: scale(1.01);
 #services-container {
   background-color: rgb(250 250 248);
   padding: 5%;
+  
 }
 .card-custom{
     background-color: rgb(250 250 248);
@@ -87,18 +90,26 @@ transform: scale(1.01);
 }
 #about-title {
   padding-top: 10%;
+  
 }
+.about-text-col{
+  padding-right: 10%;
 
-
+}
 .card {
   border-radius: 0.7rem;
 }
 #testimonials-container {
   background-color: rgb(250 250 248);
+  height: 900px;
+  
 }
 .testimonials-title{
   font-size: 2rem;
   font-weight: 700;
+}
+#testimonialCarousel {
+  margin-top: 0px; /* Moves it up */
 }
 
 label {
@@ -175,6 +186,10 @@ height: 6px;
   }
   .carousel-control-next-icon{
     height: 6px;
+  }
+  .about-text-col{
+    padding-right: 3%;
+  
   }
 }
 

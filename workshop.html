@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/media/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/media/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/media/favicon-16x16.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="/media/favicon-16x16.png" />
+    <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/dist/email.min.js"
+    ></script>
+
+    <title>Melisa’s Garden</title>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-custom navbar-expand-lg bg-body-tertiary sticky-top s"
+    >
+      <div
+        class="container-fluid d-flex justify-content-between align-items-center"
+      >
+        <a class="navbar-brand ms-lg-5" href="index.html#">
+          <img
+            src="media/android-chrome-512x512.png"
+            class="img-fluid"
+            alt="Logo"
+          />
+        </a>
+
+        <!-- Keep the hamburger menu on the right -->
+        <button
+          class="navbar-toggler ms-auto"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item mx-3">
+              <a class="nav-link active" href="index.html#services-container"
+                >OUR SERVICES</a
+              >
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link active" href="index.html#about-container"
+                >ABOUT</a
+              >
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link active" href="index.html#contact-container"
+                >CONTACT US</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+          <!-- Left column with image -->
+          <div class="col-md-6 d-flex justify-content-center">
+            <img
+              src="./media/workshopFlyer.jpeg"
+              alt="Workshop Flyer"
+              class="img-fluid w-75 w-md-50 w-lg-25"
+            />
+          </div>
+      
+          <!-- Right column with QR Code and Form -->
+          <div class="col-md-6">
+            <div class="text-center mt-5">
+              <!-- QR Code Section -->
+              <div class="mb-4">
+                <h3>Venmo</h3>
+                <img
+                  src="media/Guia-qr.png"
+                  alt="QR Code"
+                  class="img-fluid"
+                  style="max-width: 150px"
+                />
+                <p>
+                  <a
+                    href="https://venmo.com/code?user_id=3665938566087834987&created=1740419095"
+                    target="_blank"
+                    >Venmo me</a
+                  >
+                </p>
+              </div>
+      
+              <!-- Form Section -->
+              <h3>Titulo</h3>
+              <p>Texto descriptivo?</p>
+              <form id="workshop-form" class="d-flex flex-column align-items-center">
+                <div class="mb-3 w-75">
+                  <label for="workshop-name" class="form-label">Full Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="workshop-name"
+                    name="workshop-name"
+                    placeholder="Enter your full name"
+                    required
+                  />
+                </div>
+              
+                <div class="mb-3 w-75">
+                  <label for="workshop-email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="workshop-email"
+                    name="workshop-email"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+              
+                <button type="submit" class="btn custom-btn mt-3" id="workshop-btn">
+                  Register
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+    <footer class="text-dark text-center py-4">
+      <div class="social-icons mt-3 mb-4">
+        <a
+          href="https://www.instagram.com/melisasgarden/"
+          target="_blank"
+          class="text-danger mx-2"
+          ><i class="fab fa-instagram h3"></i
+        ></a>
+        <a
+          href="https://www.facebook.com/profile.php?id=61565968214254"
+          target="_blank"
+          class="text-info mx-2"
+          ><i class="fab fa-facebook-f h3"></i
+        ></a>
+      </div>
+      <div class="container">
+        <p class="mb-0">Sunnyvale, CA</p>
+        <p class="mb-0">(650) 933-6272</p>
+      </div>
+    </footer>
+    <script >document.addEventListener('DOMContentLoaded', function () {
+        document
+          .getElementById("workshop-form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+      
+            let btn = document.getElementById("workshop-btn");
+            btn.innerText = "Registering...";
+            btn.disabled = true;
+      
+            const serviceID = "service_utu6exs";
+            const templateID = "template_9cizm4m"; // Adjust this if needed
+      
+            const templateParams = {
+              from_name: document.getElementById("workshop-name").value,
+              from_email: document.getElementById("workshop-email").value,
+              message: "Interested in attending the workshop.",
+            };
+            if (window.history.replaceState) {
+    window.history.replaceState(null, null, window.location.pathname);
+  }
+            emailjs.send(serviceID, templateID, templateParams).then(
+              () => {
+                btn.innerText = "Registered!";
+                Swal.fire({
+                  text: "You have successfully registered for the workshop.",
+                  icon: "success",
+                  confirmButtonColor: "#97a884 ",
+                });
+                document.getElementById("workshop-form").reset();
+              },
+              
+              (err) => {
+                alert("Error registering: " + JSON.stringify(err));
+                btn.innerText = "Register";
+                btn.disabled = false;
+              }
+            );
+          });
+      });
+      </script>
+
+  </body>
+
+  <script type="text/javascript">
+    emailjs.init("1I1LzXwiblpOTv4Ye");
+  </script>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</html>
