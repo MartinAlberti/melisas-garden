@@ -198,7 +198,7 @@
       id="about-container"
       class="container-fluid px-lg-5 text-start mt-5 mb-5"
     >
-      <div class="row align-items-center ">
+      <div class="row align-items-center">
         <!-- Image column -->
         <div class="col-lg-6 col-12 text-center mb-4 mb-lg-0 pe-lg-5">
           <img
@@ -466,7 +466,7 @@
         var myCarousel = new bootstrap.Carousel(
           document.querySelector("#testimonialCarousel"),
           {
-            interval: 5000, // 5-second interval between slides
+            interval: 10000, // 5-second interval between slides
             pause: "false", // Ensures autoplay is not paused when hovering
             ride: "carousel", // Starts autoplay
           }
@@ -486,9 +486,12 @@
           >
             <div class="card-body bg-light">
               <div class="container">
-                <form id="contact-form" class="d-flex flex-column align-items-center">
+                <form
+                  id="contact-form"
+                  class="d-flex flex-column align-items-center"
+                >
                   <div class="mb-3 w-75">
-                    <label for="contact-name" class="form-label">Full Name</label>
+                    <label for="contact-name" class="form-label">Name</label>
                     <input
                       type="text"
                       class="form-control"
@@ -498,7 +501,20 @@
                       required
                     />
                   </div>
-          
+
+                  <div class="mb-3 w-75">
+                    <label for="contact-last-name" class="form-label"
+                      >Last Name (Optional)</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="contact-last-name"
+                      name="contact-last-name"
+                      placeholder="Enter your last name"
+                    />
+                  </div>
+
                   <div class="mb-3 w-75">
                     <label for="contact-email" class="form-label">Email</label>
                     <input
@@ -510,7 +526,7 @@
                       required
                     />
                   </div>
-          
+
                   <div class="mb-3 w-75">
                     <label for="message" class="form-label">Message</label>
                     <textarea
@@ -522,7 +538,7 @@
                       required
                     ></textarea>
                   </div>
-          
+
                   <button type="submit" class="btn custom-btn mt-3" id="button">
                     Submit
                   </button>
@@ -535,7 +551,10 @@
                     Join our community and be the first to know about workshops
                     and exclusive deals.
                   </p>
-                  <form id="subscribe-form" class="d-flex flex-column align-items-center">
+                  <form
+                    id="subscribe-form"
+                    class="d-flex flex-column align-items-center"
+                  >
                     <div class="mb-3 w-75">
                       <label for="newsletter" class="form-label">Email</label>
                       <input
@@ -547,8 +566,12 @@
                         required
                       />
                     </div>
-            
-                    <button type="submit" class="btn custom-btn mt-3" id="subscribe-btn">
+
+                    <button
+                      type="submit"
+                      class="btn custom-btn mt-3"
+                      id="subscribe-btn"
+                    >
                       Subscribe
                     </button>
                   </form>
@@ -581,7 +604,6 @@
       </div>
     </footer>
     <script src="./main.js"></script>
-
   </body>
   <script type="text/javascript">
     emailjs.init("1I1LzXwiblpOTv4Ye");

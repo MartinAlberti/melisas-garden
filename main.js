@@ -13,6 +13,7 @@ document
 
     const templateParams = {
       from_name: document.getElementById("contact-name").value,
+      from_lastname: document.getElementById("contact-last-name").value,
       from_email: document.getElementById("contact-email").value,
       message: document.getElementById("message").value,
     };

@@ -101,7 +101,7 @@ a:hover{
 }
 #testimonials-container {
   background-color: rgb(250 250 248);
-  height: 900px;
+  height: 800px;
   
 }
 .testimonials-title{
@@ -197,6 +197,10 @@ height: 6px;
   .about-text-col{
     padding-right: 3%;
   
+  }
+  #testimonials-container {
+    height: 1000px;
+    
   }
 }
 
