@@ -8,8 +8,8 @@ document
     let btn = document.getElementById("button");
     btn.value = "Sending...";
 
-    const serviceID = "service_utu6exs";
-    const templateID = "template_9cizm4m"; // Contact Form Template ID
+    const serviceID = "service_gcohg4p";
+    const templateID = "template_k1syzme"; // Contact Form Template ID
 
     const templateParams = {
       from_name: document.getElementById("contact-name").value,
@@ -47,8 +47,8 @@ document
     subscribeBtn.innerText = "Subscribing...";
     subscribeBtn.disabled = true;
 
-    const serviceID = "service_utu6exs";
-    const templateID = "template_j182v9q"; // Newsletter Template ID
+    const serviceID = "service_gcohg4p";
+    const templateID = "template_1dhi6ao"; // Newsletter Template ID
 
     const userEmail = document.getElementById("newsletter").value;
 

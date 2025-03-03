@@ -14,21 +14,45 @@ hr{
   border: none;
   opacity: unset;
 }
+.navbar {
+  max-height: 80px; /* Adjust based on your navbar size */
+  overflow: visible; /* Ensures the logo can "stick out" */
+}
 
 .navbar-custom {
   background-color: rgb(250 250 248);
-
   color: #0b1215;
   font-weight: 600;
   font-size: 1.2rem;
 }
-.navbar-brand img {
-  width: 15%; /* Adjust this size as needed */
-}
-a:hover{
-    font-weight: 650;
 
+.navbar-brand img {
+  width: 20%; /* Adjust this size as needed */
+  margin-bottom: -45px; /* Adjust value to control how much it sticks out */
+  filter: drop-shadow(3px 3px 15px rgba(0, 0, 0, 0.2));
 }
+
+/* Add a smoother transition to navbar items */
+.navbar-nav .nav-item .nav-link {
+  color: #0b1215; /* Base color */
+  font-weight: 600;
+  text-transform: uppercase; /* Adds a bit of flair */
+  padding: 0.5rem 1rem; /* Adjusts spacing */
+  transition: font-weight 0.3s ease, transform 0.2s ease; /* Smooth transition for font weight and smaller zoom */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  font-weight: 650; /* Slightly heavier font on hover */
+  transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+/* Optional: Navbar active link */
+.navbar-nav .nav-item.active .nav-link {
+  color: #0056b3; /* Active link color */
+  font-weight: 700;
+}
+
+
 #option-container {
   background-color: rgb(250 250 248);
   padding: 3% 0%;
@@ -177,7 +201,17 @@ label {
 .workshop-info{
   background-color:rgb(250 250 248) ;
 }
-
+@media (max-width: 991px) { /* Target mobile screens */
+  .navbar-brand img {
+    width: 15%; /* Restore original size on mobile */
+    margin-bottom: 0; /* Reset margin */
+  }
+  .navbar-collapse {
+    background-color: rgb(250, 250, 248); /* Match navbar background */
+    padding: 10px; /* Optional: Add some spacing */
+    border-radius: 5px; /* Optional: Smooth edges */
+  }
+}
 /* Adjusting the size of indicators for mobile */
 @media (max-width: 767px) {
   .carousel-indicators button {

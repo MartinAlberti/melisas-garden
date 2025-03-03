@@ -50,14 +50,14 @@
   </head>
   <body>
     <nav
-      class="navbar navbar-custom navbar-expand-lg bg-body-tertiary sticky-top s"
+      class="navbar navbar-custom navbar-expand-lg  sticky-top s"
     >
       <div
         class="container-fluid d-flex justify-content-between align-items-center"
       >
         <a class="navbar-brand ms-lg-5" href="index.html#">
           <img
-            src="media/android-chrome-512x512.png"
+            src="media/android-chrome-512x512-removebg-preview.png"
             class="img-fluid"
             alt="Logo"
           />
@@ -116,25 +116,26 @@
           <div class="text-center mt-5">
             <!-- QR Code Section -->
             <div class="mb-4">
-              <h3>Venmo</h3>
+              <h3 class="pb-4" >Save your spot!</h3>
               <img
                 src="media/venmoQr.png"
                 alt="QR Code"
-                class="img-fluid"
-                style="max-width: 150px"
+                class="img-fluid rounded shadow-sm mb-4"
+                style="max-width: 150px "
               />
               <p>
                 <a
                   href="https://venmo.com/code?user_id=3665938566087834987&created=1740419095"
-                  target="_blank"
+                  target="_blank",
+                  class="fw-bold ",
+                  style="text-decoration: none;"
                   >Venmo me</a
                 >
               </p>
             </div>
 
             <!-- Form Section -->
-            <h3>Titulo</h3>
-            <p>Texto descriptivo?</p>
+            
             <form
               id="workshop-form"
               class="d-flex flex-column align-items-center"
@@ -207,8 +208,8 @@
             btn.innerText = "Registering...";
             btn.disabled = true;
 
-            const serviceID = "service_utu6exs";
-            const templateID = "template_9cizm4m"; // Adjust this if needed
+            const serviceID = "service_gcohg4p";
+            const templateID = "template_1dhi6ao"; // Adjust this if needed
 
             const templateParams = {
               from_name: document.getElementById("workshop-name").value,
@@ -241,7 +242,7 @@
   </body>
 
   <script type="text/javascript">
-    emailjs.init("1I1LzXwiblpOTv4Ye");
+    emailjs.init("hThkxJ9SS0KTdoxI1");
   </script>
 
   <script
