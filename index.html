@@ -3,11 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:url" content="https://melisasgarden.com/" />
+    <link rel="canonical" href="https://melisasgarden.com" />
+
+    <meta property="og:url" content="https://melisasgarden.com" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Melisa’s Garden" />
-    <meta property="og:description" content="We bring nature into your everyday life." />
-    <meta property="og:image" content="https://melisasgarden.com/media/android-chrome-512x512-removebg-preview.png" />
+    <meta
+      property="og:description"
+      content="We bring nature into your everyday life."
+    />
+    <meta
+      property="og:image"
+      content="https://melisasgarden.com/media/android-chrome-512x512-removebg-preview.png"
+    />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:type" content="image/png" />
@@ -22,28 +30,7 @@
     />
     <meta name="author" content="Melisa's Garden" />
     <meta name="robots" content="index, follow" />
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Melisa's Garden",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Sunnyvale, CA",
-          "addressLocality": "Sunnyvale",
-          "addressRegion": "CA",
-          "postalCode": "94086",
-          "addressCountry": "US"
-        },
-        "telephone": "(650) 933-6272",
-        "url": "https://melisasgarden.com",
-        "description": "We bring nature into your everyday life.",
-        "sameAs": [
-          "https://www.instagram.com/melisasgarden/",
-          "https://www.facebook.com/profile.php?id=61565968214254"
-        ]
-      }
-    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -89,6 +76,26 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <title>Melisa’s Garden</title>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Update Open Graph tags dynamically
+        var ogUrl = "https://melisasgarden.com/";
+        var ogImage =
+          "https://melisasgarden.com/media/android-chrome-512x512-removebg-preview.png";
+
+        // Update the og:url tag
+        document
+          .querySelector('meta[property="og:url"]')
+          .setAttribute("content", ogUrl);
+
+        // Update the og:image tag
+        document
+          .querySelector('meta[property="og:image"]')
+          .setAttribute("content", ogImage);
+
+        // Other Open Graph tags can be updated similarly
+      });
+    </script>
   </head>
   <body>
     <nav class="navbar navbar-custom navbar-expand-lg sticky-top">

@@ -193,6 +193,7 @@ label {
   margin-left: 50%;
   border-radius: 50%;
 }
+
 /* Adjusting the size of indicators for mobile */
 @media (max-width: 767px) {
   .carousel-indicators button {
@@ -203,7 +204,6 @@ label {
   .carousel-indicators {
     bottom: 20px; /* Move the indicators up slightly on mobile */
   }
-
 
 
   .about-text-col {

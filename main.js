@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-
+ 
 // Close the navbar on link click for mobile devices
 $('.navbar-nav>li>a').on('click', function() {
   $('.navbar-collapse').collapse('hide');
