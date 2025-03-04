@@ -3,6 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:url" content="https://melisasgarden.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Melisa’s Garden" />
+    <meta property="og:description" content="We bring nature into your everyday life." />
+    <meta property="og:image" content="https://melisasgarden.com/media/android-chrome-512x512-removebg-preview.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:alt" content="Melisa's Garden Logo" />
+    <meta
+      name="description"
+      content="We bring nature into your everyday life."
+    />
+    <meta
+      name="keywords"
+      content="gardening services Sunnyvale, plant care expert, garden workshops Sunnyvale, landscaping consultation Sunnyvale"
+    />
+    <meta name="author" content="Melisa's Garden" />
+    <meta name="robots" content="index, follow" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Melisa's Garden",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Sunnyvale, CA",
+          "addressLocality": "Sunnyvale",
+          "addressRegion": "CA",
+          "postalCode": "94086",
+          "addressCountry": "US"
+        },
+        "telephone": "(650) 933-6272",
+        "url": "https://melisasgarden.com",
+        "description": "We bring nature into your everyday life.",
+        "sameAs": [
+          "https://www.instagram.com/melisasgarden/",
+          "https://www.facebook.com/profile.php?id=61565968214254"
+        ]
+      }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -45,13 +86,12 @@
       type="text/javascript"
       src="https://cdn.emailjs.com/dist/email.min.js"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <title>Melisa’s Garden</title>
   </head>
   <body>
-    <nav
-      class="navbar navbar-custom navbar-expand-lg  sticky-top s"
-    >
+    <nav class="navbar navbar-custom navbar-expand-lg sticky-top">
       <div
         class="container-fluid d-flex justify-content-between align-items-center"
       >
@@ -59,12 +99,10 @@
           <img
             src="media/android-chrome-512x512-removebg-preview.png"
             class="img-fluid"
-            ,
             alt="Logo"
           />
         </a>
 
-        <!-- Keep the hamburger menu on the right -->
         <button
           class="navbar-toggler ms-auto"
           type="button"
@@ -77,6 +115,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
+        <!-- Collapse navbar-content here to ensure it's properly aligned -->
         <div
           class="collapse navbar-collapse justify-content-end"
           id="navbarSupportedContent"
@@ -86,7 +125,7 @@
               <a
                 class="nav-link active"
                 aria-current="page"
-                href="./workshop.html"
+                href="workshop.html"
                 >WORKSHOP</a
               >
             </li>
@@ -203,7 +242,7 @@
         <div class="col-lg-6 col-12 text-center mb-4 mb-lg-0 pe-lg-5">
           <img
             src="media/about2.png"
-            alt=""
+            alt="about image"
             class="img-fluid rounded w-75"
             style="max-width: 1000px"
           />
@@ -603,16 +642,17 @@
         <p class="mb-0">(650) 933-6272</p>
       </div>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
     <script src="./main.js"></script>
   </body>
   <script type="text/javascript">
     emailjs.init("hThkxJ9SS0KTdoxI1");
   </script>
 
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"
-  ></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </html>

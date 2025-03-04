@@ -49,57 +49,44 @@
     <title>Melisa’s Garden</title>
   </head>
   <body>
-    <nav
-      class="navbar navbar-custom navbar-expand-lg  sticky-top s"
+   <nav class="navbar navbar-custom navbar-expand-lg sticky-top">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+    <a class="navbar-brand ms-lg-5" href="index.html#">
+      <img
+        src="media/android-chrome-512x512-removebg-preview.png"
+        class="img-fluid"
+        alt="Logo"
+      />
+    </a>
+
+    <button
+      class="navbar-toggler ms-auto"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
     >
-      <div
-        class="container-fluid d-flex justify-content-between align-items-center"
-      >
-        <a class="navbar-brand ms-lg-5" href="index.html#">
-          <img
-            src="media/android-chrome-512x512-removebg-preview.png"
-            class="img-fluid"
-            alt="Logo"
-          />
-        </a>
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <!-- Keep the hamburger menu on the right -->
-        <button
-          class="navbar-toggler ms-auto"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item mx-3">
+          <a class="nav-link active" href="index.html#services-container">OUR SERVICES</a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link active" href="index.html#about-container">ABOUT</a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link active" href="index.html#contact-container">CONTACT US</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarSupportedContent"
-        >
-          <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item mx-3">
-              <a class="nav-link active" href="index.html#services-container"
-                >OUR SERVICES</a
-              >
-            </li>
-            <li class="nav-item mx-3">
-              <a class="nav-link active" href="index.html#about-container"
-                >ABOUT</a
-              >
-            </li>
-            <li class="nav-item mx-3">
-              <a class="nav-link active" href="index.html#contact-container"
-                >CONTACT US</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
     <div class="container workshop-container">
       <div class="row g-0">
         <!-- Left column with image -->
@@ -107,12 +94,12 @@
             <img
               src="./media/Paint & plant workshop.png"
               alt="Workshop Flyer"
-              class="w-100 rounded-start shadow-sm  "
+              class="w-100 lg-rounded-start shadow-sm   "
             />
           </div>
 
         <!-- Right column with QR Code and Form -->
-        <div class="col-md-6 workshop-info rounded-end pb-5 shadow-sm ">
+        <div class="col-md-6 workshop-info lg-rounded-end pb-5 shadow-sm ">
           <div class="text-center mt-5">
             <!-- QR Code Section -->
             <div class="mb-4">

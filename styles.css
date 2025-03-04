@@ -2,21 +2,28 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: "Nunito", serif;
   font-size: 1.125rem;
   color: #0b1215;
 }
-hr{
+
+hr {
   width: 15%;
   height: 5px;
   background-color: #b3c89c;
   border: none;
   opacity: unset;
 }
+
 .navbar {
   max-height: 80px; /* Adjust based on your navbar size */
   overflow: visible; /* Ensures the logo can "stick out" */
+}
+.navbar-nav {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .navbar-custom {
@@ -27,9 +34,15 @@ hr{
 }
 
 .navbar-brand img {
-  width: 20%; /* Adjust this size as needed */
+  width: 20%; /* Default size for desktop */
   margin-bottom: -45px; /* Adjust value to control how much it sticks out */
   filter: drop-shadow(3px 3px 15px rgba(0, 0, 0, 0.2));
+}
+
+/* Keep the hamburger icon at the top */
+.navbar-toggler {
+  position: relative;
+  z-index: 1; /* Ensure it stays above the other elements */
 }
 
 /* Add a smoother transition to navbar items */
@@ -52,12 +65,10 @@ hr{
   font-weight: 700;
 }
 
-
 #option-container {
   background-color: rgb(250 250 248);
   padding: 3% 0%;
 }
-
 
 #title {
   font-weight: 700;
@@ -74,11 +85,10 @@ hr{
 .opcion-mission {
   height: auto;
   background-image: url("./media/banner-2.jpg");
-
   background-size: cover;
   background-position: right center;
-  
 }
+
 .opcion-text-column {
   height: 600px;
   background-color: rgba(0, 0, 0, 0.471);
@@ -93,45 +103,47 @@ hr{
   width: 80%;
 }
 
-
 #services-container {
   background-color: rgb(250 250 248);
   padding: 5%;
-  
 }
-.card-custom{
-    background-color: rgb(250 250 248);
 
+.card-custom {
+  background-color: rgb(250 250 248);
 }
+
 #about-title {
   font-size: 2rem;
   font-weight: 700;
 }
+
 #about-container {
   padding-top: 5%;
   padding-bottom: 5%;
-
 }
+
 #about-title {
   padding-top: 10%;
-  
 }
-.about-text-col{
-  padding-right: 10%;
 
+.about-text-col {
+  padding-right: 10%;
 }
+
 .card {
   border-radius: 0.7rem;
 }
+
 #testimonials-container {
   background-color: rgb(250 250 248);
   height: 800px;
-  
 }
-.testimonials-title{
+
+.testimonials-title {
   font-size: 2rem;
   font-weight: 700;
 }
+
 #testimonialCarousel {
   margin-top: 0px; /* Moves it up */
 }
@@ -147,14 +159,17 @@ label {
   width: 80%;
   margin-left: 3px;
 }
+
 .custom-btn {
   background-color: #b3c89c;
   color: #fff;
 }
-.custom-btn:hover{
-  background-color: #97a884 ;
+
+.custom-btn:hover {
+  background-color: #97a884;
   color: white;
 }
+
 .help-block.with-errors {
   color: #ff5050;
   margin-top: 5px;
@@ -164,53 +179,19 @@ label {
   margin-left: 10px;
   margin-right: 10px;
 }
+
 #contact-container {
   padding-bottom: 5%;
 }
-/* Make the carousel narrower */
-/* #testimonialCarousel {
-  max-width: 70%;
-  margin: 0 auto;
-} */
-
-/* Position arrows outside the text */
-.carousel-control-prev,
-.carousel-control-next {
-  width: 5%;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-/* Change the color of the arrows */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: #b3c89c; /* Change this to any color you want */
+.carousel-control-prev-icon {
+  background-color: #97a884;
+  margin-right: 50%;
   border-radius: 50%;
-  padding: 10px;
 }
-
-/* Style the indicators */
-.carousel-indicators button {
-  background-color: #b3c89c !important; /* Change to any color */
-  width: 10px;
-  height: 10px;
-}
-.workshop-container{
-  margin-top: 5%;
-}
-.workshop-info{
-  background-color:rgb(250 250 248) ;
-}
-@media (max-width: 991px) { /* Target mobile screens */
-  .navbar-brand img {
-    width: 15%; /* Restore original size on mobile */
-    margin-bottom: 0; /* Reset margin */
-  }
-  .navbar-collapse {
-    background-color: rgb(250, 250, 248); /* Match navbar background */
-    padding: 10px; /* Optional: Add some spacing */
-    border-radius: 5px; /* Optional: Smooth edges */
-  }
+.carousel-control-next-icon {
+  background-color: #97a884;
+  margin-left: 50%;
+  border-radius: 50%;
 }
 /* Adjusting the size of indicators for mobile */
 @media (max-width: 767px) {
@@ -222,25 +203,21 @@ label {
   .carousel-indicators {
     bottom: 20px; /* Move the indicators up slightly on mobile */
   }
-  .carousel-control-prev-icon{
-height: 6px;
-  }
-  .carousel-control-next-icon{
-    height: 6px;
-  }
-  .about-text-col{
+
+
+
+  .about-text-col {
     padding-right: 3%;
-  
   }
+
   #testimonials-container {
     height: 1000px;
-    
   }
 }
 
 /* Style the indicators to make them darker */
 .carousel-indicators button {
-  background-color: #b3c89c !important; 
+  background-color: #b3c89c !important;
   width: 12px;
   height: 12px;
 }
@@ -249,19 +226,50 @@ height: 6px;
 .carousel-indicators .active {
   background-color: #90ab72 !important; /* Even darker color for the active indicator */
 }
-footer{
-  background-color:  rgb(250 250 248);
-  margin-top:5%
+
+footer {
+  background-color: rgb(250 250 248);
+  margin-top: 5%;
 }
-  /* Reduce the logo size on small screens */
-  @media (max-width: 768px) {
-    .navbar-brand img {
-      width: 50px !important; /* Adjust this value as needed */
-    }
-      #opcion-title {
-   
+
+/* Mobile view adjustments */
+/* Mobile view adjustments */
+@media (max-width: 991px) {
+  .navbar {
+    height: 120px; /* Increase navbar height */
+  }
+
+  .navbar-collapse {
+    background-color: rgb(250, 250, 248);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 40px;
+    text-align: right;
+  }
+
+  /* Fix the logo position on mobile */
+  .navbar-brand img {
+    position: fixed;
+    top: 20px; /* Adjust top position */
+    left: 10px; /* Adjust left position */
+    width: 20% !important;
+    margin-bottom: -45px;
+    z-index: 2; /* Ensure the logo stays above navbar items */
+  }
+
+  .navbar-toggler {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+  }
+
+  .navbar-nav .nav-item .nav-link {
+    padding: 0.5rem 1rem;
+  }
+
+  #opcion-title {
     line-height: 4rem;
     font-size: 4rem;
-    
   }
-  }
+}
